@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name:	Testing Map
+Plugin Name:	Map Test
 Description:	Maplibre test
 Version:		1.0.0
 Author:			David Browne

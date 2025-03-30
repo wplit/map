@@ -10,9 +10,13 @@ class X_Map extends \Bricks\Element {
   public $icon         = 'ti-bolt-alt';
   public $scripts      = ['xMapInit']; // Script(s) run when element is rendered on frontend or updated in builder
 
+  public function get_keywords() {
+		return [ 'map', 'test', 'maplibre' ];
+	}
+
   // Return localised element label
   public function get_label() {
-    return esc_html__( 'Test map', 'bricks' );
+    return esc_html__( 'Map (test)', 'bricks' );
   }
 
  
