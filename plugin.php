@@ -21,6 +21,6 @@ add_action( 'init', function() {
 
 
 add_action('wp_enqueue_scripts', function() {
-  wp_enqueue_style('x-maplibre-css', 'https://unpkg.com/maplibre-gl@^5.3.0/dist/maplibre-gl.css', [], '1.0.0');
+  wp_enqueue_style('x-maplibre-css', plugin_dir_url( __FILE__ ) . 'components/assets/css/maplibre.css', [], '5.3.0');
   wp_enqueue_style('x-map-css', plugin_dir_url( __FILE__ ) . 'components/assets/css/map.css', [], '1.0.0'); 
 }); 

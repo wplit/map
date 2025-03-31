@@ -30,7 +30,7 @@ class X_Map extends \Bricks\Element {
 
   public function enqueue_scripts() {
 
-    wp_enqueue_script('x-maplibre-gj', 'https://unpkg.com/maplibre-gl@5.3.0/dist/maplibre-gl.js', [], '1.0.0', true);
+    wp_enqueue_script('x-maplibre-gj', plugin_dir_url( __FILE__ ) . 'assets/js/maplibre-gl.js', [], '5.3.0', true);
     wp_enqueue_script('x-maplibre-init', plugin_dir_url( __FILE__ ) . 'assets/js/maplibre-init.js', [], '1.0.0', true);  
   }
 
